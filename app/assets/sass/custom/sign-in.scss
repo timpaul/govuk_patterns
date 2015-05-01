@@ -1,0 +1,26 @@
+
+
+.sign-in-box{
+	@extend %contain-floats;
+  	width: 100%;
+  	margin: $gutter auto;
+
+  	@include media(tablet) {
+    	width: 31.33%;
+  	}
+
+  	#email-address,
+  	#password{
+  		width: 100%
+  	}
+  	h1{
+  		margin-top: $gutter
+  	}
+  	.button{
+  		margin-bottom: 0
+  	}
+}
+
+.font-warning{
+  color: $mellow-red;
+}

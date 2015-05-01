@@ -1,0 +1,66 @@
+{{<layout}}
+
+{{$pageTitle}}Create an account{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+
+  <form action="/" method="post" class="form">
+
+    <h1 class="form-title heading-large">
+      Sign in details
+    </h1>
+
+    <br>
+
+      <form action="" method="get" class="form">
+
+      <!-- Email address -->
+      <div class="form-group">
+        <label class="form-label-bold" for="mobile">Mobile number</label>
+        <input type="text" class="form-control" id="mobile">
+      </div>
+
+    </form>
+
+
+    <!-- Password -->
+    <div class="form-group">
+      <label class="form-label-bold" for="password">Password</label>
+      <div class="form-hint">
+        Create a password that has:
+        <ul class="list-bullet">
+          <li>at least 8 characters</li>
+          <li>at least one symbol (eg ?!£%)</li>
+          <li>at least one capital letter</li>
+        </ul>
+
+      </div>
+      <input type="text" class="form-control" id="password">
+      <div class="password-controls font-xsmall">
+        <div class="password-strength">Password strength: <span class="font-warning bold-xsmall">weak</small></div>
+        <div class="show-password">
+          <label>
+            <input type="checkbox"> Show password
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submit -->
+    <div class="form-group">
+      <a class="button" href="activate-account">Continue</a>
+    </div>
+
+
+	</form>
+
+
+</main>
+
+{{/content}}
+
+{{/layout}}
+

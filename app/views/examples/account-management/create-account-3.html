@@ -1,0 +1,75 @@
+{{<layout}}
+
+{{$pageTitle}}Create an account{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+
+  <form action="/" method="post" class="form">
+
+    <h1 class="form-title heading-large">
+      Create an account
+    </h1>
+
+    <p class="text">
+      An account lets you save your details and access them later on.
+    </p>
+
+    <p class="text">
+      You'll need an email address or mobile number to sign in.
+    </p>
+
+    <br>
+
+      <form action="" method="get" class="form">
+
+      <!-- Email address or mobile -->
+      <div class="form-group">
+        <label class="form-label-bold" for="username">Email address or mobile number</label>
+        <p class="form-hint">We'll send you a message so you can activate your account</p>
+        <input type="text" class="form-control" id="username">
+      </div>
+
+    </form>
+
+
+    <!-- Password -->
+    <div class="form-group">
+      <label class="form-label-bold" for="password">Password</label>
+      <div class="form-hint">
+        Create a password that has:
+        <ul class="list-bullet">
+          <li>at least 8 characters</li>
+          <li>at least one symbol (eg ?!£%)</li>
+          <li>at least one capital letter</li>
+        </ul>
+
+      </div>
+      <input type="text" class="form-control" id="password">
+      <div class="password-controls font-xsmall">
+        <div class="password-strength">Password strength: <span class="font-warning bold-xsmall">weak</small></div>
+        <div class="show-password">
+          <label>
+            <input type="checkbox"> Show password
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submit -->
+    <div class="form-group">
+      <a class="button" href="activate-account">Continue</a>
+    </div>
+
+
+	</form>
+
+
+</main>
+
+{{/content}}
+
+{{/layout}}
+

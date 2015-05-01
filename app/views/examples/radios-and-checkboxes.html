@@ -1,0 +1,130 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK prototyping kit
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+<h1 class="heading-xlarge">Radios and checkboxes</h1>
+
+<form action="/" method="post" class="form">
+
+
+
+	<!-- Favourites -->
+
+	<fieldset class="form-group">
+		<legend class="heading-medium">What fruits do you like?</legend>
+		<p class="form-hint">Select all that apply:</p>
+    <div class="form-group">
+    	<input type="checkbox" id="apples"> 
+      <label class="form-label form-control-checkbox" for="apples">
+      	apples
+      </label>
+      <input type="checkbox" id="oranges"> 
+      <label class="form-label form-control-checkbox" for="oranges">
+      	oranges
+      </label>
+      <input type="checkbox" id="pairs"> 
+      <label class="form-label form-control-checkbox" for="pairs">
+      	pairs
+      </label>
+      <input type="checkbox" id="bananas"> 
+      <label class="form-label form-control-checkbox" for="bananas">
+      	bananas
+      </label>
+    </div>
+  </fieldset>
+
+	<!-- Reason -->
+
+ <fieldset class="form-group">
+		<legend class="heading-medium">What's your favourite thing about fruit?</legend>
+		<p class="form-hint">Select one:</p>
+    <div class="form-group">
+    	<input type="radio" id="nice" name="why"> 
+      <label class="form-label form-control-radio" for="nice">
+      	it's healthy
+      </label>
+      <input type="radio" id="tasty" name="why"> 
+      <label class="form-label form-control-radio" for="tasty">
+      	it's tasty
+      </label>
+      <input type="radio" id="fruity" name="why"> 
+      <label class="form-label form-control-radio" for="fruity">
+      	it's fruity
+      </label>
+    </div>
+	</fieldset>
+
+  <hr>
+
+  <h2 class="heading-large">Alternative version</h2>
+
+  <p>In this version radios and checkboxes look the same.</p>
+  <br><br>
+
+		<div class="version-2">
+
+	  	<!-- Favourites -->
+
+	  	<fieldset class="form-group">
+	  		<legend class="heading-medium">What fruits do you like?</legend>
+	  		<p class="form-hint">Select all that apply:</p>
+		    <div class="form-group">
+		    	<input type="checkbox" id="apples-2"> 
+		      <label class="form-label form-control-checkbox" for="apples-2">
+		      	apples
+		      </label>
+		      <input type="checkbox" id="oranges-2"> 
+		      <label class="form-label form-control-checkbox" for="oranges-2">
+		      	oranges
+		      </label>
+		      <input type="checkbox" id="pairs-2"> 
+		      <label class="form-label form-control-checkbox" for="pairs-2">
+		      	pairs
+		      </label>
+		      <input type="checkbox" id="bananas-2"> 
+		      <label class="form-label form-control-checkbox" for="bananas-2">
+		      	bananas
+		      </label>
+		    </div>
+		  </fieldset>
+
+	  	<!-- Reason -->
+
+			 <fieldset class="form-group">
+					<legend class="heading-medium">What's your favourite thing about fruit?</legend>
+					<p class="form-hint">Select one:</p>
+			    <div class="form-group">
+			    	<input type="radio" id="nice-2" name="why-2"> 
+			      <label class="form-label form-control-radio" for="nice-2">
+			      	it's healthy
+			      </label>
+			      <input type="radio" id="tasty-2" name="why-2"> 
+			      <label class="form-label form-control-radio" for="tasty-2">
+			      	it's tasty
+			      </label>
+			      <input type="radio" id="fruity-2" name="why-2"> 
+			      <label class="form-label form-control-radio" for="fruity-2">
+			      	it's fruity
+			      </label>
+			    </div>
+		  	</fieldset>
+
+	  </div>
+
+
+
+	</form>
+
+
+
+</main>
+
+{{/content}}
+
+{{/layout}}

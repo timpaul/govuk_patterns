@@ -1,0 +1,74 @@
+
+
+
+// Styling for select boxes
+
+
+
+.form-select{
+  @include core-19;
+
+  width: 100%;
+  @include box-sizing(border-box);
+  padding: 5px 45px 4px 10px;
+  background-color: #fff;
+  background: #FFF url(/public/images/toggle-sprite-grey.png) no-repeat 100% -50px;
+  border: 2px solid $border-colour;
+  -webkit-appearance: none;
+  border-radius: 0;
+
+  @include media(tablet) {
+    width: auto;
+  }
+
+  &:hover{
+    cursor: pointer;
+  }
+
+}
+
+// Compact version
+
+.form-select.compact-control{
+  @include core-16;
+  padding: 3px 22px 2px 5px;
+  background: #FFF url(/public/images/toggle-sprite-grey.png) no-repeat 101% -55px;
+
+}
+
+
+.form-select-2{
+  @include core-19;
+
+  width: 100%;
+  @include box-sizing(border-box);
+  padding: 6px 45px 5px 10px;
+  background: #CCC url(/public/images/toggle-sprite.png) no-repeat 100% -25px;
+  border: 0 solid;
+  -webkit-appearance: none;
+  border-radius: 0;
+
+  @include media(tablet) {
+    width: auto;
+  }
+}
+
+.form-select-3{
+  @include core-19;
+
+  margin-top: 3px;
+
+  width: 100%;
+  @include box-sizing(border-box);
+  border: 1px solid $border-colour;
+
+  @include media(tablet) {
+    width: auto;
+  }
+}
+
+.form-select-4{
+  font-size: 16px;
+  margin-top: 7px;
+}
+

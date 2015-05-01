@@ -1,0 +1,203 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK prototyping kit
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+	<h1 class="heading-xlarge">Form fields</h1>
+
+
+
+  <h3 class="heading-medium">Currency</h3>
+
+  <ul class="list-bullet">
+  	<li>use a single text field</li>
+  	<li>prefix the field with the currency symbol</li>
+  	<li>ignore currency symbols and whitespaces in the input</li>
+  	<li>interpret decimal places correctly</li>
+  </ul>
+
+	<div class="example">
+
+	  <form action="/" method="post" class="form">
+	    <!-- Pounds -->
+	    <div class="form-group">
+	      <label class="form-label" for="currency-pound">£ 
+	      	<input type="text" class="form-control form-control-5-chars" id="currency-pound">
+	      </label>
+	    </div>
+		</form>
+
+	</div>
+
+
+
+
+	<h2 class="heading-medium">Periodicity</h2>
+
+	<ul class="list-bullet text">
+		<li>make it clear what the time-period you're asking about is</li>
+		<li>fields and labels for compound values like '£50 a week' should be aligned horizontally</li>
+	</ul>
+
+
+	<div class="example">
+
+	  <form action="/" method="post" class="form">
+
+	  	<fieldset class="inline">
+	  		<legend class="form-label-bold">On average, how many units of alcohol do you drink a week?</legend>
+	  		<br>
+		    <div class="form-group">
+		      <label class="form-label" for="currency-pound">
+		      	<input type="text" class="form-control form-control-3-chars" id="currency-pound"> 
+		      	units a week
+		      </label>
+		    </div>
+
+	  	</fieldset>
+		</form>
+
+	</div>
+
+	<ul class="list-bullet text">
+		<li>if the periodicity can vary from user to user, let them change it to suit - don't make them do the conversion in their heads</li>
+		<li>if one period is much more common than others, use it as the default</li>
+	</ul>
+
+	<div class="example">
+
+  <form action="/" method="post" class="form">
+
+  	<fieldset class="inline">
+  		<legend class="form-label-bold">On average, how much and how often are you paid for this job?</legend>
+  		<br>
+	    <div class="form-group">
+	      <label class="form-label" for="currency-pound">£ 
+	      	<input type="text" class="form-control form-control-5-chars" id="currency-pound">
+	      </label>
+	    </div>
+	    <div class="form-group">
+	      <label class="form-label visuallyhidden"></label>
+	      <select class="form-select-2">
+	      	<option>a week</option>
+	      	<option>every 4 weeks</option>
+	      	<option>a month</option>
+	      	<option>a year</option>
+	      </select>
+	    </div>
+
+	    <br><br><br>
+
+	    <div class="form-group">
+	      <label class="form-label" for="currency-pound">£ 
+	      	<input type="text" class="form-control form-control-5-chars" id="currency-pound">
+	      </label>
+	    </div>
+	    <div class="form-group">
+	      <label class="form-label visuallyhidden"></label>
+	      <select class="form-select">
+	      	<option>a week</option>
+	      	<option>every 4 weeks</option>
+	      	<option>a month</option>
+	      	<option>a year</option>
+	      </select>
+	    </div>
+
+	   	<br><br><br>
+
+	    <div class="form-group">
+	      <label class="form-label" for="currency-pound">
+	      	<input type="text" class="form-control form-control-4-chars" id="currency-pound"> &nbsp;pounds
+	      </label>
+	    </div>
+	    <div class="form-group">
+	      <label class="form-label visuallyhidden"></label>
+	      <select class="form-select">
+	      	<option>a week</option>
+	      	<option>every 4 weeks</option>
+	      	<option>a month</option>
+	      	<option>a year</option>
+	      </select>
+	    </div>
+
+	    <br><br><br>
+
+	    <div class="form-group">
+	      <label class="form-label" for="currency-pound">
+	      	<input type="text" class="form-control form-control-4-chars" id="currency-pound"> &nbsp;pounds
+	      </label>
+	    </div>
+	    <div class="form-group">
+	      <label class="form-label visuallyhidden"></label>
+	      <select class="form-select-3">
+	      	<option>a week</option>
+	      	<option>every 4 weeks</option>
+	      	<option>a month</option>
+	      	<option>a year</option>
+	      </select>
+	    </div>
+
+  	</fieldset>
+
+
+
+	</form>
+
+	</div>
+
+
+	<h2 class="heading-medium">Memorable dates</h2>
+
+	<ul class="list-bullet text">
+		<li>use three fields, for day, month and year</li>
+		<li>allow single digit days and months</li>
+		<li>if the range of possible years is narrow, allow 2 digit years</li>
+		<li>let people type months as numbers, words or abbreviations</li>
+	</ul>
+
+	<div class="example">
+
+	  <form action="/" method="post" class="form">
+
+	    <!-- Date of birth -->
+	    <div class="form-group">
+
+	      <fieldset class="inline">
+	        <legend class="form-label-bold">Date of birth</legend>
+
+	          <div class="form-group">
+	            <label class="form-label" for="dob-day">Day</label>
+	            <input class="form-control form-control-2-chars" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+	          </div>
+
+	          <div class="form-group">
+	            <label class="form-label" for="dob-month">Month</label>
+	            <input class="form-control form-control-4-chars" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+	          </div>
+
+	          <div class="form-group">
+	            <label class="form-label" for="dob-year">Year</label>
+	            <input class="form-control form-control-4-chars" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+	          </div>
+	        </div>
+
+	      </fieldset>
+
+	    </div>
+
+		</form>
+
+	</div>
+
+
+
+</main>
+
+{{/content}}
+
+{{/layout}}

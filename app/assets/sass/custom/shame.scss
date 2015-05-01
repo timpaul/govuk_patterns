@@ -1,0 +1,175 @@
+
+
+// Fix full-width buttons on mobile (_forms.scss in GOV.UK Elements)
+.button {
+  @include media(mobile) {
+    box-sizing: border-box
+  }
+}
+
+// Make bold form labels the same as non-bold ones
+.form-label-bold {
+  @include bold-19;
+  margin-bottom: 5px;
+}
+
+// Simpler form hint style
+.form-hint{
+  margin: -5px 0 20px 0;
+  color: $black;
+}
+
+// Fixed character width form controls
+.form-control-1-char    {	width: 1.5em }
+.form-control-2-chars   {	width: 2.4em }
+.form-control-3-chars   {	width: 3.3em }
+.form-control-4-chars   {	width: 4.2em }
+.form-control-5-chars   {	width: 5.1em }
+.form-control-6-chars   {	width: 6em }
+.form-control-7-chars   {	width: 7em }
+.form-control-8-chars   {	width: 8em }
+.form-control-9-chars   {	width: 9em }
+.form-control-10-chars  {	width: 10em }
+.form-control-11-chars  {	width: 11em }
+.form-control-12-chars  {	width: 12em }
+.form-control-13-chars  {	width: 13em }
+.form-control-14-chars  {	width: 14em }
+.form-control-15-chars  {	width: 15em }
+.form-control-16-chars  {	width: 16em }
+
+// Inline fieldsets for compound controls
+fieldset.inline,
+.inline-form-groups {
+  @extend %contain-floats;
+  .form-group {
+    width: auto;
+    margin-right: 10px;
+    clear: none;
+  }
+}
+
+// Set textarea to block so Chrome and FF don't add a bottom margin
+textarea{
+  display: block
+}
+
+// Thick grey borders
+.form-control-checkbox::before,
+.form-control-radio::before,
+.form-select-2,
+textarea.form-control,
+input.form-control{
+  border: 2px solid $border-colour;
+  //background: $highlight-colour;
+}
+
+.form-control-email{
+  width: 36em;
+}
+
+.heading-medium{
+  display: block;
+}
+
+
+
+
+// Add missing form-control widths
+
+.form-control-1-4 {
+  width: 100%;
+  @include media(tablet) {
+    width: 25%;
+  }
+}
+
+.form-control-1-3 {
+  width: 100%;
+  @include media(tablet) {
+    width: 33.33%;
+  }
+}
+
+.form-control-2-3 {
+  width: 100%;
+  @include media(tablet) {
+    width: 66.66%;
+  }
+}
+
+.form-control-1-1 {
+  width: 100%;
+}
+
+// Make margin between related form groups smaller
+
+.form-group-related{
+  margin-bottom: 10px;
+}
+
+
+// Remove top margin from first item in indented panels
+
+.panel-indent > * {
+  margin-top: 0;
+}
+
+// Back-link
+
+.back-link{
+  //margin-top: 36px;
+  //float: right;
+  a{
+    color: $link-colour;
+  }
+}
+
+
+// Grids
+
+.grid-row {
+  @extend %grid-row;
+}
+
+.column-quarter {
+  @include grid-column( 1/4 );
+}
+
+.column-three-quarters {
+  @include grid-column( 3/4 );
+}
+
+// Align service header in a quarter-width grid layout
+#global-header.with-proposition .header-wrapper .header-global {
+  //width: 25%;
+}
+
+
+hr{
+  border: 1px solid $border-colour;
+  margin-bottom: 60px
+}
+
+// Compact controls
+
+.compact-controls{
+  .form-control,
+  .form-select,
+  .form-label,
+  .form-label-bold{
+    @include core-16;
+  }
+  .form-select{
+    padding: 3px 36px 2px 5px;
+    background: #FFF url(/public/images/toggle-sprite-grey.png) no-repeat 101% -55px;
+  }
+  .form-control{
+    padding: 2px 4px;
+  }
+  .form-control-checkbox::before,
+  .form-control-radio::before{
+    height: 25px;
+    width: 25px;
+    margin-top: -6px;
+  }
+}

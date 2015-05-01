@@ -1,0 +1,29 @@
+// Example box
+
+.example {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid $border-colour;
+  margin-top: 15px;
+  margin-bottom: 45px;
+
+  padding-top: 45px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+}
+
+.example:before {
+  content: "EXAMPLE";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.21053em 0.78947em 0.21053em 0.78947em;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714286;
+  font-weight: 400;
+  text-transform: none;
+  background: $border-colour;
+  color: white;
+}

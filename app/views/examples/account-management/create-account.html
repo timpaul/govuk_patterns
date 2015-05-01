@@ -1,0 +1,57 @@
+{{<layout}}
+
+{{$pageTitle}}Create an account{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+
+  <form action="/" method="post" class="form">
+
+    <h1 class="form-title heading-large">
+      Create an account
+    </h1>
+
+    <p class="text">
+      An account lets you save your details and access them later on.
+    </p>
+
+    <br>
+
+    <!-- Email address -->
+    <div class="form-group">
+      <label class="form-label-bold" for="email-address">Email address</label>
+      <input type="text" class="form-control" id="email-address">
+    </div>
+
+    <!-- Password -->
+    <div class="form-group">
+      <label class="form-label-bold" for="password">Create a password</label>
+      <div class="form-hint">
+        Your password must have:
+        <ul class="list-bullet">
+          <li>at least 8 characters</li>
+          <li>at least one symbol (eg ?!£%)</li>
+          <li>at least one capital letter</li>
+        </ul>
+
+      </div>
+      <input type="text" class="form-control" id="password">
+    </div>
+
+    <!-- Submit -->
+    <div class="form-group">
+      <a class="button" href="activate-account">Create an account</a>
+    </div>
+
+
+	</form>
+
+
+</main>
+
+{{/content}}
+
+{{/layout}}
+
