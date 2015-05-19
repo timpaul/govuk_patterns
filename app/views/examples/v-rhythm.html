@@ -1,0 +1,303 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK prototyping kit
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+<div id="v-rhythm">
+
+	<h1 class="heading-xlarge">Example form questions</h1>
+
+	  <form action="/" method="post" class="form form-style-1">
+
+
+			<!-- Name -->
+
+
+		<h2 class="heading-medium">Name</h2>
+
+	    <label class="form-label" for="first-name">
+	      First name
+	    </label>
+	    <input type="text" id="first-name" class="form-control"> 
+
+	    <label class="form-label" for="last-name">
+	      Last name
+	    </label>
+	    <input type="text" id="last-name" class="form-control"> 
+
+		<!-- Address -->
+
+		<h2 class="heading-medium">Address</h2>
+
+	    <label class="form-label" for="street">
+	      Building and street
+	    </label>
+	    <input type="text" id="street" class="form-control">
+
+	    <label class="form-label visuallyhidden" for="street-2">
+	      Building and street 2
+	    </label>
+	    <input type="text" id="street-2" class="form-control"> 
+
+	    <label class="form-label visuallyhidden" for="street-2">
+	      Building and street 3
+	    </label>
+	    <input type="text" id="street-2" class="form-control"> 
+
+	    <label class="form-label" for="town">
+	      Town or city
+	    </label>
+	    <input type="text" id="town" class="form-control form-control-1-3"> 
+
+	    <label class="form-label" for="county">
+	      County (optional)
+	    </label>
+	    <input type="text" id="county" class="form-control form-control-1-3"> 
+
+	    <label class="form-label" for="postcode">
+	      Postcode
+	    </label>
+	    <input type="text" id="poctcode" class="form-control form-control-7-chars"> 
+
+
+			<!-- Date of birth -->
+
+
+			  
+	  	<h2 class="heading-medium">Date of birth</h2>
+
+		<div class="inline-form-groups">
+
+		    <div class="form-group">
+		      <label class="form-label" for="dob-day">Day</label>
+		      <input class="form-control form-control-2-chars" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+		    </div>
+
+		    <div class="form-group">
+		      <label class="form-label" for="dob-month">Month</label>
+		      <input class="form-control form-control-4-chars" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+		    </div>
+
+		    <div class="form-group">
+		      <label class="form-label" for="dob-year">Year</label>
+		      <input class="form-control form-control-4-chars" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+		    </div>
+
+		</div>
+
+
+			<!-- Preferred contact method -->
+
+			  <h2 class="heading-medium">Preferred method of contact</h2>
+
+			  <p>We'll only contact you when it's important.</p>
+			  <p>Select one:</p>
+
+			  <div class="form-group">
+			    <input type="radio" id="email" name="contact"> 
+			    <label class="form-label form-control-radio js-toggle" for="email" data-show="#contact-email-address" data-hide="#contact-mobile-number">
+			      email
+			    </label>
+			    <input type="radio" id="mobile" name="contact"> 
+			    <label class="form-label form-control-radio js-toggle" for="mobile" data-hide="#contact-email-address" data-show="#contact-mobile-number">
+			      text message
+			    </label>
+			  </div>
+
+			  <div class="js-hidden" id="contact-email-address">
+			    <label class="heading-medium" for="email-address">
+			      Email address
+			    </label>
+			    <p class="form-hint">We'll ask you to confirm this before you can use the service</p>
+			    <input type="text" id="email-address" class="form-control form-control-email">
+			  </div>
+
+			  <div class="js-hidden" id="contact-mobile-number">
+			    <label class="heading-medium" for="mobile-number">
+			      Mobile number
+			    </label>
+			    <p class="form-hint">We'll ask you to confirm this before you can use the service</p>
+			    <input type="text" id="mobile-number" class="form-control form-control-14-chars">
+			  </div>
+
+
+			<!-- Create a password -->
+
+			<h2 class="heading-medium" for="password">Create a password</h2>
+
+		    <p>Your password must have:</p>
+		    <ul class="list-bullet">
+		      <li>at least 4 characters</li>
+		      <li>at least one number</li>
+		      <li>at least one capital letter</li>
+		    </ul>
+
+		    <label class="visuallyhidden" for="password">Create a password</label>
+		    <input type="password" class="form-control" id="password">
+
+		    <input type="checkbox" id="show-password"> 
+		    <label class="form-label form-control-checkbox compact-control" for="show-password">
+		      Show typing
+		    </label>
+
+			<!-- Radio buttons example -->
+
+			<fieldset class="form-group inline-form-groups">
+			  <legend class="heading-medium">Do you like fruit?</legend>
+			  <div class="form-group">
+			    <input type="radio" id="like-yes" name="like"> 
+			    <label class="form-label form-control-radio" for="like-yes">
+			      Yes
+			    </label>
+			  </div>
+			  <div class="form-group">
+			    <input type="radio" id="like-no" name="like"> 
+			    <label class="form-label form-control-radio" for="like-no">
+			      No
+			    </label>
+			  </div>
+			</fieldset>
+			<!-- Pounds per time period -->
+
+			<fieldset class="form-group">
+			  <legend class="heading-medium">How much do you spend on fruit?</legend>
+			  <div class="inline-form-groups">
+			    <div class="form-group">
+			      <label class="form-label horizontal-right-label" for="currency-pound">
+			        <input type="text" class="form-control form-control-4-chars" id="currency-pound">pounds
+			      </label>
+			    </div>
+			    <div class="form-group">
+			      <label class="form-label visuallyhidden"></label>
+			      <select class="form-select">
+			        <option>a week</option>
+			        <option>every 4 weeks</option>
+			        <option>a month</option>
+			        <option>a year</option>
+			      </select>
+			    </div>
+			  </div>
+			</fieldset>
+			<!-- Checkboxes example -->
+
+			<fieldset class="form-group">
+			  <legend class="heading-medium">What kinds of fruit do you usually buy?</legend>
+			  <p>Select all that apply:</p>
+			  <div class="form-group">
+			    <input type="checkbox" id="apples"> 
+			    <label class="form-label form-control-checkbox" for="apples">
+			      apples
+			    </label>
+			    <input type="checkbox" id="oranges"> 
+			    <label class="form-label form-control-checkbox" for="oranges">
+			      oranges
+			    </label>
+			    <input type="checkbox" id="pairs"> 
+			    <label class="form-label form-control-checkbox" for="pairs">
+			      pairs
+			    </label>
+			    <input type="checkbox" id="bananas"> 
+			    <label class="form-label form-control-checkbox" for="bananas">
+			      bananas
+			    </label>
+			  </div>
+			</fieldset>
+			<!-- Radio buttons example -->
+
+			<fieldset class="form-group">
+			  <legend class="heading-medium">What's your favourite thing about fruit?</legend>
+
+			  <p>Select one:</p>
+			  
+			  <div class="form-group">
+			    <input type="radio" id="nice" name="why"> 
+			    <label class="form-label form-control-radio" for="nice">
+			      it's healthy
+			    </label>
+			    <input type="radio" id="tasty" name="why"> 
+			    <label class="form-label form-control-radio" for="tasty">
+			      it's tasty
+			    </label>
+			    <input type="radio" id="fruity" name="why"> 
+			    <label class="form-label form-control-radio" for="fruity">
+			      it's fruity
+			    </label>
+			  </div>
+			</fieldset>
+			
+			<!-- Textarea example -->
+
+			<fieldset class="form-group">
+			    <legend class="heading-medium">
+			      What's the best fruit you've ever eaten?
+			    </legend>
+			    <div class="form-group">
+			    	<label for="description" class="form-label">Describe it's taste, texture, smell and colour</label>
+			    	<textarea class="form-control" rows="5" id="description"></textarea>
+			    </div>
+			</fieldset>
+			
+			<!-- Side filters -->
+
+			<fieldset class="form-group compact-controls">
+			    <legend class="heading-medium">Filter fruit by:</legend>
+
+			    <div class="form-group">
+			      <label class="form-label">Colour</label>
+			      <select class="form-select form-control-1-4">
+			        <option>Any</option>
+			        <option>Red</option>
+			        <option>Yellow</option>
+			        <option>Green</option>
+			        <option>Purple</option>
+			        <option>Brown</option>
+			        <option>White</option>
+			      </select>
+			    </div>
+
+			    <div class="form-group">
+			      <label class="form-label">Size</label>
+			      <select class="form-select form-control-1-4">
+			        <option>Any</option>
+			        <option>Small</option>
+			        <option>Medium</option>
+			        <option>Large</option>
+			        <option>Extra large</option>
+			      </select>
+			    </div>
+
+			    <div class="form-group">
+			      <label class="form-label">Price</label>
+			      <select class="form-select form-control-1-4">
+			        <option>Any</option>
+			        <option>Less than a pound</option>
+			        <option>1 to 2 pounds</option>
+			        <option>2 to 3 pounds</option>
+			        <option>3 to 4 pounds</option>
+			        <option>4 to 5 pounds</option>
+			        <option>More than 5 pounds</option>
+			      </select>
+			    </div>
+			  </fieldset>
+
+		  <!-- Submit -->
+	    <div class="form-group">
+	      <a class="button" href="activate-account">Continue</a>
+	    </div>
+
+	</form>
+
+</div>
+
+
+
+</main>
+
+{{/content}}
+
+{{/layout}}
