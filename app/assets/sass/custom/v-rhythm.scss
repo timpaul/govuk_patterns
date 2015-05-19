@@ -1,0 +1,58 @@
+
+
+$v-rhythm: 25px;
+
+
+
+#v-rhythm{
+  @extend %contain-floats;
+  background-image: url(/public/images/v-rhythm-25.png); 
+  background-position-y: -11px;
+
+  .heading-xlarge{
+    margin-bottom: 67px;
+  }
+
+  .heading-medium{
+    margin-top: 43px;
+    margin-bottom: 24px;
+  }
+
+  .form-control{
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .form-group{
+    margin-bottom: 0;
+  }
+
+  .form-label{
+    margin-bottom: 3px;
+    margin-top: 22px;
+  }
+
+  legend + .form-group * {
+    -webkit-margin-top-collapse : discard;
+  }
+
+  .inline-form-groups{
+    margin-top: 22px;
+  }
+  .form-group{
+    label{
+      margin-top: 0;
+    }
+  }
+
+  .form-control-radio {
+    margin-top: -5px;
+    margin-bottom: 15px;
+  }
+
+  p{
+    margin-bottom: 19px;
+    margin-top: 25px;
+  }
+
+}

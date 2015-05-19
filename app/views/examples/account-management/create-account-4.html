@@ -10,8 +10,14 @@
   <form action="/" method="post" class="form">
 
     <h1 class="form-title heading-large">
-      Sign in
+      Create an account
     </h1>
+
+    <p class="text">
+      An account lets you save your details and access them later on.
+    </p>
+
+    <br>
 
     <!-- Email address -->
     <div class="form-group">
@@ -21,15 +27,22 @@
 
     <!-- Password -->
     <div class="form-group">
-      <label class="form-label" for="password">Password</label>
+      <label class="form-label" for="password">Create a password</label>
+      <div class="form-hint">
+        Your password must have:
+        <ul class="list-bullet">
+          <li>at least 4 characters</li>
+          <li>at least one number</li>
+          <li>at least one capital letter</li>
+        </ul>
+
+      </div>
       <input type="text" class="form-control" id="password">
     </div>
 
-    <p><a href="forgotten-password">Forgotten your password?</a></p>
-
     <!-- Submit -->
     <div class="form-group">
-      <a class="button" href="activate-account">Sign in</a>
+      <a class="button" href="activate-account">Create an account</a>
     </div>
 
 
