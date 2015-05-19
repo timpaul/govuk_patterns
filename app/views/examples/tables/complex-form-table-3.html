@@ -1,0 +1,79 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK prototyping kit
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+	<h1 class="heading-xlarge">Complex form table</h1>
+
+	<table class="complex-form-table">
+		<tr>
+			<td class="row-header" colspan=2></td>
+			<th class="value-2014">2014 (£)</th>
+			<th class="value-2013">2013 (£)</th>
+		</tr>
+		<tr>
+			<th>
+	
+					<h3 class="heading-small">Turnover</h3>
+				</th>
+				<td>
+					<details class="row-header-help-content">
+						<summary>What's this?</summary>
+						<p>This is the total amount your company has received or is due from providing goods or services for the period.
+				It should exclude VAT if VAT was charged on it’s supplies. Turnover may also be known as sales, revenue or income.</p>
+			</details>
+
+			</td>
+			<td><label for="" class="visuallyhidden">2014 turnover</label><input stype="text" class="form-control" value="5000"></td>
+			<td><label for="" class="visuallyhidden">2014 turnover</label><input stype="text" class="form-control" value="4000"></td>
+		</tr>
+		<tr>
+			<th>
+					<h3 class="heading-small">Cost of sales</h3>
+				</th>
+				<td>
+					<details class="row-header-help-content">
+						<summary>What's this?</summary>
+
+						<p>The cost of sales for a manufacturer is the cost of finished goods in its beginning inventory plus the cost of goods manufactured minus the cost of finished goods in ending inventory.</p>
+
+						<p>The cost of sales for a retailer is the cost of merchandise in its beginning inventory plus the net cost of merchandise purchased minus the cost of merchandise in its ending inventory.</p>
+
+						<p>The cost of sales does not include selling expenses or general and administrative expenses, which are commonly referred to as SG&A.</p>
+				</details>
+
+			</td>
+			<td><label for="" class="visuallyhidden">2014 cost of sales</label><input stype="text" class="form-control" value="2000"></td>
+			<td><label for="" class="visuallyhidden">2014 turnover</label><input stype="text" class="form-control" value="2000"></td>
+		</tr>
+		<tr class="total">
+			<th>
+				<h3 class="heading-small">Gross profit (loss)</h3>
+			</th>
+				<td>
+				<details class="row-header-help-content">
+						<summary>What's this?</summary>
+					<p>This is calculated by subtracting your cost of sales from your turnover.</p>	
+				</details>	
+
+			</td>
+			<td class="bold-small">
+				<div class="total-value">3000</div>
+			</td>
+			<td class="bold-small">
+				<div class="total-value">2000</div>
+			</td>
+		</tr>
+
+	</table>
+
+</main>
+
+{{/content}}
+
+{{/layout}}

@@ -1,4 +1,7 @@
-details{
+
+// New details tag style
+
+details.heading-style{
   margin-bottom: 30px;
   summary{
     text-decoration: underline;
@@ -6,18 +9,17 @@ details{
   summary::-webkit-details-marker {
     display: none
   }
-}
-
-details[open]{
-  summary{
-    font-weight: bold;
-    text-decoration: none;
-    color: $text-colour;
-  }
-  summary:focus{
-    outline: none;
-  }
-  summary:hover{
-    text-decoration: underline;
+  &[open]{
+    summary{
+      font-weight: bold;
+      text-decoration: none;
+      color: $text-colour;
+      &:focus{
+        outline: none;
+      }
+      &:hover{
+        text-decoration: underline;
+      }
+    }
   }
 }

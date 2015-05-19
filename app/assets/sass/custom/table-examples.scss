@@ -1,0 +1,55 @@
+
+
+// Complex form table
+
+.complex-form-table{
+  .row-header{
+    width: 60%;
+  }
+  .value-2014,
+  .value-2013{
+    width: 20%;
+    text-align: right;
+  }
+
+  td:last-child,
+  th:last-child{
+    padding-right: 0;
+  }
+
+  th, td{
+    vertical-align: top;
+  }
+
+  td input{
+      text-align: right;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+  }
+
+  td .total-value{
+      text-align: right;
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+
+  tr.total{
+    th, td{
+      border-top: 2px solid $black;
+    }
+  }
+
+  .row-header-help-content{
+    font-weight: normal;
+    summary{
+      //font-size: 14px;
+      text-decoration: underline;
+    }
+  }
+
+  h3{
+    margin-top: 5px;
+    margin-bottom: 4px;
+  }
+}

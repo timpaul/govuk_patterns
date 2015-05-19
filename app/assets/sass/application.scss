@@ -13,11 +13,15 @@
 // either add and import new partial files, or modify those in GOV.UK elements to fit your user needs.
 
 
-@import 'custom/shame';
-@import 'custom/for-elements';
-@import 'custom/sign-in';
-@import 'custom/select-boxes';
-@import 'custom/radios-and-checkboxes';
-@import 'custom/details';
-@import 'custom/example-box';
-@import 'custom/v-rhythm';
+.new-styles{
+	@import 'custom/shame';
+	@import 'custom/for-elements';
+	@import 'custom/sign-in';
+	@import 'custom/select-boxes';
+	@import 'custom/radios-and-checkboxes';
+	@import 'custom/details';
+	@import 'custom/example-box';
+	@import 'custom/v-rhythm';	
+}
+
+	@import 'custom/table-examples';	
