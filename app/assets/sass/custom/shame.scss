@@ -45,8 +45,8 @@ fieldset.inline,
 .form-control-checkbox::before,
 .form-control-radio::before,
 .form-select-2,
-textarea.form-control,
-input.form-control{
+.form-control,
+.form-control{
   border: 2px solid $border-colour;
 }
 
@@ -150,4 +150,10 @@ fieldset.form-group{
     width: 25px;
     margin-top: -6px;
   }
+}
+
+// Make buttons same height as form fields
+.button{
+  padding-top: 8px;
+  padding-bottom: 5px
 }
