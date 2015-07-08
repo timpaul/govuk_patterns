@@ -17,11 +17,8 @@
 
 <main id="content" role="main">
 
-	<div class="grid-row">
-		<div class="column-two-thirds">
-
 			<p class="form-navigation">
-				<a class="back-to-previous" href="/">Back <span class="visuallyhidden"> to the previous question.</span></a>
+				<a class="back-to-previous" href="./">Back <span class="visuallyhidden"> to the previous question.</span></a>
 				<span class="question-number">Question 3 of 16</span>
 			</p>
 
@@ -29,80 +26,47 @@
 
 			<form action="/" method="get" class="form">
 
-	      <div class="form-group">
-	        <label class="form-label" for="postcode">
-	          Enter your postcode
-	        </label>
-	        <input type="text" id="postcode" class="form-control form-control-8-chars">
-	      </div>
-
-      	<div class="form-group" id="submit-postcode">
-		      <a class="button js-toggle" href="#" data-show="#address-list" data-hide="#submit-postcode">Continue</a>
-		    </div>
-
-		    <div class="js-hidden" id="address-list">
+		    <div id="address-list">
 
 	      	<div class="form-group">
 	          <h3 class="form-label">
-	              Select your address
-	          </h3>     
-	          <div class="js-form-select form-control-1-1">
-	            <input type="radio" name="address-list" id="address-1" checked>
-	            <label for="address-1">1 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-2">
-	            <label for="address-2">2 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-3">
-	            <label for="address-3">3 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-4">
-	            <label for="address-4">4 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-5">
-	            <label for="address-5">5 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-6">
-	            <label for="address-6">6 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-7">
-	            <label for="address-7">7 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-8">
-	            <label for="address-8">8 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-9">
-	            <label for="address-9">9 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-10">
-	            <label for="address-10">10 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-11">
-	            <label for="address-11">11 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-12">
-	            <label for="address-12">12 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-13">
-	            <label for="address-13">13 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-14">
-	            <label for="address-14">14 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-15">
-	            <label for="address-15">15 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-16">
-	            <label for="address-16">16 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-17">
-	            <label for="address-17">17 Pegasus Place, St Albans AL3 5QT</label>
-	            <input type="radio" name="address-list" id="address-18">
-	            <label for="address-18">18 Pegasus Place, St Albans AL3 5QT</label>
+	            Enter your address
+	          </h3> 
 
-	            <p class="none-of-the-above">
-	                <a href="address-manual" class="bold-small">The address is not on this list</a>
-	            </p>
+	          <select name="Address" id="address-selector" autofocus="autofocus" autocorrect="off" autocomplete="off" class="auto-suggest form-control">
+      			<option value="" selected="selected">Select address</option>
+	            <option value="1 Pegasus Place, St Albans AL3 5QT">1 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="2 Pegasus Place, St Albans AL3 5QT">2 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="3 Pegasus Place, St Albans AL3 5QT">3 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="4 Pegasus Place, St Albans AL3 5QT">4 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="5 Pegasus Place, St Albans AL3 5QT">5 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="6 Pegasus Place, St Albans AL3 5QT">6 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="7 Pegasus Place, St Albans AL3 5QT">7 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="8 Pegasus Place, St Albans AL3 5QT">8 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="9 Pegasus Place, St Albans AL3 5QT">9 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="10 Pegasus Place, St Albans AL3 5QT">10 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="11 Pegasus Place, St Albans AL3 5QT">11 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="12 Pegasus Place, St Albans AL3 5QT">12 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="13 Pegasus Place, St Albans AL3 5QT">13 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="14 Pegasus Place, St Albans AL3 5QT">14 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="15 Pegasus Place, St Albans AL3 5QT">15 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="16 Pegasus Place, St Albans AL3 5QT">16 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="17 Pegasus Place, St Albans AL3 5QT">17 Pegasus Place, St Albans AL3 5QT</option>
+	            <option value="18 Pegasus Place, St Albans AL3 5QT">18 Pegasus Place, St Albans AL3 5QT</option>
+	        	</select>	    
+	        </div>
 
-	          </div>
-
-	        </div>		
 
 			    <div class="form-group"> 
 			    	<a class="button" href="next-question" >Continue</a>
 			    </div>
+
 			  </div>
 
 			</form>
 
-		</div>
-	</div>
-
 </main>
+
 
 {{/content}}
 
