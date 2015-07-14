@@ -1,0 +1,39 @@
+.checklist{
+  .item{
+    padding: 10px 0;
+    //border-bottom: 1px solid $border-colour;
+    .status{
+      float: right;
+      display: none;
+    }
+    &.not-done{
+
+    }
+    &.done{
+      a{
+        //color: $secondary-text-colour;
+      }
+    }
+  }
+
+  .item::before{
+    content: "";
+    float: left;
+    background-color: #fff;
+    border: 2px solid $border-colour;
+
+    width: 30px;
+    height: 30px;
+
+    margin-right: 10px;
+    margin-top: -5px;
+  }
+
+  .item.done::before{
+    content: "";
+    background: #FFF url(/public/images/tick.png) no-repeat 1px 1px;
+    background-size: 91%;
+  }
+
+
+}
