@@ -1,0 +1,46 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK prototyping kit
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+	<h1 class="heading-xlarge">Address lookup</h1>
+
+	<p class="text">
+		Patterns for helping users find an address from a list.
+		Test each example with this address: 
+		7 Pegasus Place, St Albans AL3 5QT.
+	<p>
+
+	<h1 class="heading-large">The patterns</h1>
+
+	<h2 class="heading-medium"><a href="address-v1">1. Auto-suggest box</a></h2>
+	<p class="text">
+		This pattern lets users start typing their address and then uses that to return entries from the full register.
+		The main challenge is how quickly you can return a useful set of addresses.
+	<p>
+
+	<h2 class="heading-medium"><a href="address-v2">2. Postcode plus auto-suggest box</a></h2>
+	<p class="text">
+		You can narrow the search space of pattern 1 considerably by having users enter their postcode first.
+		This won't help people who don't know the postcode though, so make it optional.
+	<p>
+
+	<h2 class="heading-medium"><a href="address-v3">3. Postcode plus embedded select box</a></h2>
+	<p class="text">
+		An alternative to pattern 2 is to present the results in a select box, so the user only has to type their postcode.
+	</p>
+	<p class="text">
+		Some users really struggle to scroll through long select boxes. This custom version addresses that issue by opening
+		out in full and moving the content below it down, so as not to obscure it.
+	<p>
+
+</main>
+
+{{/content}}
+
+{{/layout}}
