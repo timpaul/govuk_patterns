@@ -1,21 +1,29 @@
 .checklist{
   .item{
     padding: 10px 0;
-    //border-bottom: 1px solid $border-colour;
+    font-weight: bold;
     .status{
       float: right;
-      display: none;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 4px 10px 3px;
+      //width: 100px;
+      text-align: center;
+      border: 2px solid;
     }
-    &.not-done{
-
+    &.complete .status{
+      color: $green;
     }
-    &.done{
-      a{
-        //color: $secondary-text-colour;
-      }
+    &.incomplete .status{
+      color: $orange;
+    }
+    &.not-started .status{
+      color: $secondary-text-colour;
     }
   }
 
+/*
   .item::before{
     content: "";
     float: left;
@@ -34,6 +42,6 @@
     background: #FFF url(/public/images/tick.png) no-repeat 1px 1px;
     background-size: 91%;
   }
-
+*/
 
 }
